@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#19171b">
+  <title>NeuroQuest Tech · Undercity</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- La aplicación no utiliza servidores ni envía las tareas a Internet. -->
+  <div class="city" aria-hidden="true"><span class="city-graffiti">NO LIMITS // YOUR RULES</span></div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="crown">♛</span><strong>NEUROQUEST<br><em>TECH</em></strong><small>UNDERCITY EDITION</small></div>
+      <nav aria-label="Navegación principal">
+        <a href="#inicio" class="active" aria-current="page"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m4 11 8-7 8 7v9H4zM9 20v-6h6v6"/></svg><span>Inicio</span></a>
+        <a href="#misiones"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg><span>Misiones</span></a>
+        <a href="#calendario"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M8 3v4M16 3v4M4 9h16"/></svg><span>Calendario</span></a>
+        <a href="#enfoque"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg><span>Enfoque</span></a>
+        <a href="#progreso"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19V5M5 19h15M9 16v-4M13 16V8M17 16V5"/></svg><span>Progreso</span></a>
+        <a href="#ajustes"><svg class="nav-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/><circle cx="12" cy="12" r="4"/></svg><span>Ajustes</span></a>
+      </nav>
+      <!-- Imagen decorativa independiente: NO es una captura de la interfaz. -->
+      <div class="hero-stage" aria-live="polite"><img class="hero" id="hero-image" src="assets/hero.png" alt="Ilustración de Rebelde con ropa urbana"><div class="hero-name" id="hero-name">REBELDE</div></div>
+      <div class="side-note">TU RITMO.<br> TUS REGLAS.</div>
+    </aside>
+    <main id="inicio" tabindex="-1">
+      <header class="topbar">
+        <div><span class="eyebrow">// BASE DE OPERACIONES</span><h1>HAZLO A TU <span>RITMO.</span></h1></div>
+        <section class="xp-head" aria-label="Nivel y experiencia"><b id="level">NIVEL 1</b><div class="meter"><div id="xpbar"></div></div><small id="xptext">0 / 100 XP</small></section>
+      </header>
+      <section class="avatar-panel comic" aria-labelledby="avatar-title">
+        <h2 id="avatar-title" class="brush dark">MI ALTER EGO</h2>
+        <div class="avatars">
+          <div class="avatar-choice" data-avatar-choice="rebelde">
+            <button type="button" class="avatar selected" data-avatar="rebelde" aria-pressed="true"><img src="assets/rebelde.png" alt=""><span>REBELDE</span></button>
+            <div class="avatar-quick" aria-hidden="true"><h3>Rebelde</h3><p class="avatar-role">El impulsor</p><p><strong>Lema:</strong> «¡Menos vueltas, más acción!»</p><p><strong>Fortaleza:</strong> romper el bloqueo inicial.</p></div>
+              <button type="button" class="avatar-info" aria-label="Más información sobre Rebelde" aria-expanded="false" aria-controls="avatar-info-rebelde"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg></button>
+            <div class="avatar-popover" id="avatar-info-rebelde" role="dialog" aria-labelledby="avatar-info-title-rebelde" aria-hidden="true" tabindex="0">
+              <h3 id="avatar-info-title-rebelde">Rebelde — El impulsor</h3>
+              <p class="avatar-motto">«¡Menos vueltas, más acción!»</p>
+              <p><strong>Descripción:</strong> Es quien se atreve a empezar incluso cuando no tiene todo resuelto. Prefiere aprender haciendo.</p>
+              <p><strong>Rasgos:</strong> iniciativa, valentía, creatividad y espontaneidad.</p>
+              <dl><dt>Fortaleza</dt><dd>romper el bloqueo inicial.</dd><dt>Desafío</dt><dd>mantener la constancia y evitar actuar sin planificación.</dd></dl>
+              <p class="avatar-key-phrase"><strong>Frase clave:</strong> «¡Empieza!»</p>
+            </div>
+          </div>
+          <div class="avatar-choice" data-avatar-choice="estratega">
+            <button type="button" class="avatar" data-avatar="estratega" aria-pressed="false"><img src="assets/estratega-icon.png" alt=""><span>ESTRATEGA</span></button>
+            <div class="avatar-quick" aria-hidden="true"><h3>Estratega</h3><p class="avatar-role">La planificadora</p><p><strong>Lema:</strong> «Cada paso tiene su propósito».</p><p><strong>Fortaleza:</strong> organizar el caos.</p></div>
+            <button type="button" class="avatar-info" aria-label="Más información sobre Estratega" aria-expanded="false" aria-controls="avatar-info-estratega"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg></button>
+            <div class="avatar-popover" id="avatar-info-estratega" role="dialog" aria-labelledby="avatar-info-title-estratega" aria-hidden="true" tabindex="0">
+              <h3 id="avatar-info-title-estratega">Estratega — La planificadora</h3>
+              <p class="avatar-motto">«Cada paso tiene su propósito».</p>
+              <p><strong>Descripción:</strong> Es quien observa el conjunto, identifica prioridades y convierte los problemas complejos en planes claros.</p>
+              <p><strong>Rasgos:</strong> análisis, organización, previsión y pensamiento estratégico.</p>
+              <dl><dt>Fortaleza</dt><dd>organizar el caos.</dd><dt>Desafío</dt><dd>evitar el exceso de análisis y el perfeccionismo.</dd></dl>
+              <p class="avatar-key-phrase"><strong>Frase clave:</strong> «¡Planifica!»</p>
+            </div>
+          </div>
+          <div class="avatar-choice" data-avatar-choice="explorador">
+            <button type="button" class="avatar" data-avatar="explorador" aria-pressed="false"><img src="assets/explorador-icon.png" alt=""><span>EXPLORADOR</span></button>
+            <div class="avatar-quick" aria-hidden="true"><h3>Explorador</h3><p class="avatar-role">El descubridor</p><p><strong>Lema:</strong> «Siempre hay otro camino».</p><p><strong>Fortaleza:</strong> adaptarse a lo desconocido.</p></div>
+            <button type="button" class="avatar-info" aria-label="Más información sobre Explorador" aria-expanded="false" aria-controls="avatar-info-explorador"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg></button>
+            <div class="avatar-popover" id="avatar-info-explorador" role="dialog" aria-labelledby="avatar-info-title-explorador" aria-hidden="true" tabindex="0">
+              <h3 id="avatar-info-title-explorador">Explorador — El descubridor</h3>
+              <p class="avatar-motto">«Siempre hay otro camino».</p>
+              <p><strong>Descripción:</strong> Es quien disfruta descubriendo posibilidades, probando herramientas y encontrando soluciones diferentes.</p>
+              <p><strong>Rasgos:</strong> curiosidad, adaptabilidad, experimentación y aprendizaje.</p>
+              <dl><dt>Fortaleza</dt><dd>adaptarse a lo desconocido.</dd><dt>Desafío</dt><dd>evitar dispersarse entre demasiadas ideas.</dd></dl>
+              <p class="avatar-key-phrase"><strong>Frase clave:</strong> «¡Experimenta!»</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comic paper calendar-panel" id="calendario" tabindex="-1" aria-labelledby="calendar-title"><h2 id="calendar-title" class="brush yellow">▦ CALENDARIO DE MISIONES</h2><div id="calendar-content" aria-live="polite"></div></section>
+      <div class="dashboard">
+        <div class="primary">
+          <section class="comic paper" id="crear-mision" tabindex="-1" aria-labelledby="mission-title">
+            <h2 id="mission-title" class="brush yellow"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 5h14v14H5zM8 9h8M8 13h5"/></svg><span>NUEVA MISIÓN PRINCIPAL</span></h2>
+            <form id="mission-form">
+              <label for="goal">¿Qué vas a conseguir?</label>
+              <textarea id="goal" rows="3" required placeholder="Ej.: preparar una auditoría, estudiar un examen, ordenar la casa..."></textarea>
+              <div class="form-grid">
+                <div><label for="deadline">Fecha límite</label><input type="date" id="deadline" required></div>
+                <div><label for="daily">Minutos al día</label><input type="number" id="daily" min="15" max="720" value="60" required></div>
+                <div><label for="difficulty">Complejidad</label><select id="difficulty"><option value="baja">Baja</option><option value="media" selected>Media</option><option value="alta">Alta</option></select></div>
+              </div>
+              <button class="big-action" type="submit"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m13 2-8 12h6l-1 8 8-12h-6z"/></svg><span>GENERAR PLAN DE SUBMISIONES</span></button>
+              <p class="hint">Plan orientativo por plantillas. Puedes editar cada paso y su duración; no utiliza IA.</p>
+            </form>
+          </section>
+          <section class="comic paper" id="misiones" tabindex="-1" aria-labelledby="plan-title">
+            <h2 id="plan-title" class="brush orange"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg><span>PLAN DE MISIÓN</span></h2>
+            <div id="missions" aria-live="polite"><p class="empty">Aquí aparecerán las submisiones cuando generes tu plan.</p></div>
+          </section>
+        </div>
+        <div class="secondary">
+          <section class="comic paper compact" aria-labelledby="today-title"><h2 id="today-title" class="brush yellow"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1"/><path d="M8 3v4M16 3v4M4 9h16"/></svg><span>PLAN DE HOY</span></h2><div id="today" aria-live="polite" aria-atomic="true"><p class="muted">Genera tu primera misión para comenzar.</p></div></section>
+          <section class="comic timer-panel" id="enfoque" tabindex="-1" aria-labelledby="timer-title"><h2 id="timer-title" class="brush orange"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg><span>TEMPORIZADOR POMODORO</span></h2><div id="clock" role="timer" aria-live="off">25:00</div><div id="visual-time" class="visual-time" hidden><div id="visual-time-label" class="visual-time-label">Tiempo restante del Pomodoro</div><progress id="visual-progress" class="visual-progress" max="1500" value="1500" aria-labelledby="visual-time-label" aria-valuetext="25 min restantes, 0% transcurrido"></progress><div class="visual-time-meta"><span id="visual-remaining">25 min restantes</span><span id="visual-elapsed">0% transcurrido</span></div></div><div class="timer-buttons"><button id="start" type="button"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></svg><span>INICIAR</span></button><button id="pause" type="button"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg><span>PAUSA</span></button><button id="reset" type="button"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M19 8a8 8 0 1 0 1 6M19 4v4h-4"/></svg><span>REINICIAR</span></button></div><p>Trabaja a tu ritmo. Puedes pausar cuando lo necesites.</p></section>
+          <section class="comic paper compact" id="progreso" tabindex="-1" aria-labelledby="progress-title"><div class="global-progress-block" aria-labelledby="global-progress-title"><h2 id="global-progress-title" class="brush dark"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19V5M5 19h15M9 16v-4M13 16V8M17 16V5"/></svg><span>PROGRESO GLOBAL</span></h2><div id="global-progress" aria-live="polite" aria-atomic="true"></div></div><h2 id="progress-title" class="brush dark"><svg class="heading-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19V5M5 19h15M9 16v-4M13 16V8M17 16V5"/></svg><span>VIABILIDAD DE LAS MISIONES</span></h2><div id="workload" aria-live="polite" aria-atomic="true"><p class="muted">Aquí verás la viabilidad de cada misión según su plazo.</p></div></section>
+        <section class="comic paper compact" id="ajustes" tabindex="-1"><h2 class="brush dark">ACCESIBILIDAD</h2><div class="settings"><button id="font-toggle" type="button" aria-pressed="false"><svg class="setting-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 10.5 5h3L19 19M7.2 14h9.6"/></svg><span class="setting-label">A+ Texto grande</span><span class="setting-status" aria-hidden="true">Desactivado</span></button><button id="contrast-toggle" type="button" aria-pressed="false"><svg class="setting-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z"/></svg><span class="setting-label">Alto contraste</span><span class="setting-status" aria-hidden="true">Desactivado</span></button><button id="reading-toggle" type="button" aria-pressed="false"><svg class="setting-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6.5c2.5-1.4 5.1-1.2 8 0v12c-2.9-1.2-5.5-1.4-8 0zM20 6.5c-2.5-1.4-5.1-1.2-8 0v12c2.9-1.2 5.5-1.4 8 0z"/></svg><span class="setting-label">Lectura facilitada</span><span class="setting-status" aria-hidden="true">Desactivado</span></button><button id="focus-toggle" type="button" aria-pressed="false"><svg class="setting-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg><span class="setting-label">Modo concentración</span><span class="setting-status" aria-hidden="true">Desactivado</span></button><button id="visual-time-toggle" type="button" aria-pressed="false"><svg class="setting-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v5l3 2"/></svg><span class="setting-label">Tiempo visual</span><span class="setting-status" aria-hidden="true">Desactivado</span></button></div><div class="backup-actions"><button id="export-backup" class="backup-action" type="button"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg><span>Exportar copia de seguridad</span></button><button id="import-backup-button" class="backup-action" type="button"><svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21V9M7 14l5-5 5 5M5 4h14"/></svg><span>Importar copia de seguridad</span></button><input id="import-backup" type="file" accept=".json,application/json" hidden aria-label="Seleccionar copia de seguridad JSON"></div></section>
+        </div>
+      </div>
+      <footer>NEUROQUEST TECH · PROTOTIPO PERSONAL · DATOS GUARDADOS EN ESTE NAVEGADOR</footer>
+    </main>
+  </div>
+</body>
+</html>
+
